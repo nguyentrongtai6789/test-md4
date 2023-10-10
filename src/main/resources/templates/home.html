@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="home.js"></script>
+
+</head>
+<body onload="showListStudent()">
+<div style="text-align: center"><input style="width: 600px; margin-left: 300px" class="form-control" type="text" placeholder="enter name to search" id="name-search"></div>
+<div style="text-align: center">
+    <button onclick="searchByName()" class="btn btn-primary">Search</button>
+    <button onclick="home()" class="btn btn-primary">Home</button>
+</div>
+<div style="text-align: center; margin-top: 20px"><button class="btn btn-primary" onclick="addNewStudent()">Add new student</button></div>
+<div id="list-student" style="margin-top: 20px"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+</html>
